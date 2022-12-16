@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap");
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #dadada;
+}
+
+.album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 169px;
+  width: 540px;
+  left: 20px;
+  top: 20px;
+  border-radius: 15px;
+  background-color: #ffff;
+}
+
+.album .album_title {
+  width: 169px;
+  height: 169px;
+  background: url(image.png);
+  border-radius: 15px 0px 0px 15px;
+}
+
+.album .music_control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 24px;
+  width: 371px;
+  height: 169px;
+}
+
+.album .info .info_songs {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.album .info .info_songs .spotifybtn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.album .info .info_songs .spotifybtn label #checkMode {
+  display: none;
+}
+
+.album .info .control_panel_song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album .info .control_panel_song .btn_control button {
+  outline: none;
+  border: none;
+  background-color: #ffff;
+}
+
+.album .info .extension_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.album .info .extension_time .scale_time {
+  position: relative;
+  width: 257px;
+  height: 3px;
+  left: 0px;
+  top: 0.23px;
+  background: #dadada;
+}
+
+.album .info .extension_time .scale_time::after {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  left: 0px;
+  top: 0px;
+  background-color: #b45353;
+}
+
+.album .info .extension_time .play_time {
+  margin-left: 10px;
+  width: 34px;
+  height: 15px;
+  right: -1.5px;
+  top: -5.77px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #454545;
+}
