@@ -62,12 +62,32 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      button {
+        outline: none;
+        border: none;
+        background-color: #ffff;
+      }
       .btn_control {
-        button {
-          outline: none;
-          border: none;
-          background-color: #ffff;
+        
+      }
+      .like:hover{
+        svg path{
+          stroke:#008162;
+          
         }
+      }
+      .repeat_song{
+        label {
+          #repeatBtn {
+            display: none;
+          }
+          &:hover{
+            svg path{
+              stroke:#717171;
+            }
+          }
+        }
+       
       }
     }
     .extension_time {
@@ -76,22 +96,19 @@
       align-items: center;
       flex-direction: row;
 
-      .scale_time {
-        position: relative;
+      .audio-track {
         width: 257px;
         height: 3px;
-        left: 0px;
-        top: 0.23px;
-        background: #dadada;
-        &::after {
-          position: absolute;
-          width: 12px;
+        background-color: #dddddd;
+        margin: 5px 0 ;
+        .time {
+          width: 0;
           height: 3px;
-          left: 0px;
-          top: 0px;
-          background-color: #b45353;
+          background-color: #B45353;
+          transition: all 1s ease-out;
         }
       }
+     
       .play_time {
         margin-left: 10px;
         width: 34px;

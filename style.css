@@ -65,10 +65,22 @@
   align-items: center;
 }
 
-.album .info .control_panel_song .btn_control button {
+.album .info .control_panel_song button {
   outline: none;
   border: none;
   background-color: #ffff;
+}
+
+.album .info .control_panel_song .like:hover svg path {
+  stroke: #008162;
+}
+
+.album .info .control_panel_song .repeat_song label #repeatBtn {
+  display: none;
+}
+
+.album .info .control_panel_song .repeat_song label:hover svg path {
+  stroke: #717171;
 }
 
 .album .info .extension_time {
@@ -78,22 +90,18 @@
   flex-direction: row;
 }
 
-.album .info .extension_time .scale_time {
-  position: relative;
+.album .info .extension_time .audio-track {
   width: 257px;
   height: 3px;
-  left: 0px;
-  top: 0.23px;
-  background: #dadada;
+  background-color: #dddddd;
+  margin: 5px 0;
 }
 
-.album .info .extension_time .scale_time::after {
-  position: absolute;
-  width: 12px;
+.album .info .extension_time .audio-track .time {
+  width: 0;
   height: 3px;
-  left: 0px;
-  top: 0px;
-  background-color: #b45353;
+  background-color: #B45353;
+  transition: all 1s ease-out;
 }
 
 .album .info .extension_time .play_time {
